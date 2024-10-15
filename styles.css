@@ -9,6 +9,18 @@ body {
 	font-family: Arial, sans-serif;
 	line-height: 1.6;
 	color: #333;
+	display: flex;
+	min-height: 100vh;
+	/* Ensure body takes up full viewport height */
+	flex-direction: column;
+	/* Stack content vertically */
+	margin: 0;
+	/* Remove default body margin */
+}
+
+main {
+	flex-grow: 1;
+	/* Allow main content to expand to fill available space */
 }
 
 /* Header and Navigation */
@@ -249,6 +261,88 @@ nav {
 
 	.articles-grid {
 		grid-template-columns: 1fr;
+	}
+}
+
+/* Login Container */
+.login-container {
+	max-width: 400px;
+	margin: 50px auto;
+	/* Center the container */
+	padding: 20px;
+	border: 1px solid #ccc;
+	border-radius: 8px;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+	/* Add a subtle shadow */
+	background-color: #fff;
+	/* Or any other background color */
+}
+
+.login-container h2 {
+	text-align: center;
+	margin-bottom: 20px;
+	color: #333;
+}
+
+.form-group {
+	margin-bottom: 15px;
+}
+
+.form-group label {
+	display: block;
+	margin-bottom: 5px;
+}
+
+.form-group input[type="text"],
+.form-group input[type="password"] {
+	width: 100%;
+	padding: 10px;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	box-sizing: border-box;
+}
+
+.btn-primary {
+	background-color: #007bff;
+	/* Blue button */
+	color: #fff;
+	padding: 10px 15px;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+	width: 100%;
+	/* Make the button take full width */
+	transition: background-color 0.3s ease;
+	/* Add a smooth transition */
+}
+
+.btn-primary:hover {
+	background-color: #0056b3;
+	/* Darker blue on hover */
+}
+
+.login-container p {
+	text-align: center;
+	margin-top: 15px;
+}
+
+.login-container a {
+	color: #007bff;
+	text-decoration: none;
+}
+
+.login-container a:hover {
+	text-decoration: underline;
+}
+
+
+/* Responsive Design for Login */
+@media screen and (max-width: 480px) {
+	.login-container {
+		max-width: 90%;
+		/* Adjust width on smaller screens */
+		margin: 20px auto;
+		/* Reduce margin */
 	}
 }
 
