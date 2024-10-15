@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>News</title>
+	<link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+	<header>
+		<nav>
+			<div class="logo">NEWS</div>
+			<button class="menu-toggle">Menu</button>
+			<ul class="nav-links">
+				<li><a href="index.php?page=cat&id=1">Sport</a></li>
+				<li><a href="index.php?page=cat&id=2">Economie</a></li>
+				<li><a href="index.php?page=cat&id=3">Planete</a></li>
+			</ul>
+			<ul class="user-links">
+				<li><a href="index.php?page=inscription">Inscription</a></li>
+				<li><a href="index.php?page=connexion">Connexion</a></li>
+			</ul>
+		</nav>
+	</header>
+
+	<main>
+		<section class="carousel">
+			<div class="carousel-container">
+				<!-- Carousel items will be added dynamically with JavaScript -->
+			</div>
+			<button class="carousel-button prev">&lt;</button>
+			<button class="carousel-button next">&gt;</button>
+			<div class="carousel-indicators"></div>
+		</section>
+
+		<section class="articles">
+			<article class="article">
+				<h3><a href="index.php?page=article&id=1">PSG Signs New Star Player</a></h3>
+				<p>Paris Saint-Germain has announced the signing of a new star player, shocking fans and experts alike.
+				</p>
+				<small>2024-04-15 Sport</small>
+			</article>
+			<article class="article">
+				<h3><a href="index.php?page=article&id=2">Global Economy Shows Signs of Recovery</a></h3>
+				<p>Recent economic indicators suggest a strong recovery in the global economy, with growth projections
+					being revised upwards.</p>
+				<small>2024-04-16 Economie</small>
+			</article>
+		</section>
+	</main>
+
+	<footer>
+		<p>&copy; 2024 News Website. All rights reserved.</p>
+	</footer>
+
+	<script src="script.js"></script>
+</body>
+
+</html>
