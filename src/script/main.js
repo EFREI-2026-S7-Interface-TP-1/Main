@@ -12,12 +12,12 @@ document.addEventListener('DOMContentLoaded', function () {
 	// Fonctionnalité du carousel
 	const carouselData = [
 		{
-			imageUrl: 'sciences.jpg',
+			imageUrl: '../../public/images/sciences.jpg',
 			title: 'Breaking News: Major Scientific Discovery',
 			description: 'Scientists announce a groundbreaking discovery that could revolutionize our understanding of the universe.'
 		},
 		{
-			imageUrl: 'tech.jpg',
+			imageUrl: '../../public/images/tech.jpg',
 			title: 'Tech Giant Unveils New Product Line',
 			description: 'A leading tech company reveals its latest innovations, set to hit the market next month.'
 		}
