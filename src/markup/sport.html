@@ -4,8 +4,8 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>News</title>
-	<link rel="stylesheet" href="styles.css">
+	<title>Sport News</title>
+	<link rel="stylesheet" href="src/style/main.css">
 	<link rel="icon"
 		href="https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/Logo_BFMTV_2019.svg/600px-Logo_BFMTV_2019.svg.png">
 </head>
@@ -16,34 +16,46 @@
 			<div class="logo">NEWS</div>
 			<button class="menu-toggle">Menu</button>
 			<ul class="nav-links">
-				<li><a href="index.html">Home</a></li>
-				<li><a href="src/sport.html">Sport</a></li>
+				<li><a href="index.html" class="active">Home</a></li>
+				<li><a href="src/markup/sport.html" class="active">Sport</a></li>
 				<li><a href="">Economie</a></li>
 				<li><a href="">Planete</a></li>
 			</ul>
 			<ul class="user-links">
-				<li><a href="src/login.html">Connexion</a></li>
+				<li><a href="src/markup/login.html">Connexion</a></li>
 			</ul>
 		</nav>
 	</header>
 
 	<main>
-		<div class="login-container">
-			<h2>Se connecter</h2>
-			<form action="src/login.html" method="post">
-				<div class="form-group">
-					<label for="username">Nom d'utilisateur</label>
-					<input type="text" name="username" id="username" required>
-				</div>
+		<h1 class="page-title">Sport News</h1>
 
-				<div class="form-group">
-					<label for="password">Mot de passe</label>
-					<input type="password" name="password" id="password" required>
-				</div>
+		<section class="featured-article">
+			<img src="public/images/sciences.jpg" alt="Featured Sport Article">
+			<div class="featured-content">
+				<h2>PSG Signs New Star Player</h2>
+				<p>Paris Saint-Germain has announced the signing of a new star player, shocking fans and experts alike.
+					The move is expected to significantly boost the team's performance in the upcoming season.</p>
+				<a href="#" class="read-more">Read More</a>
+			</div>
+		</section>
 
-				<button type="submit" class="btn-primary">Se connecter</button>
-			</form>
-		</div>
+		<section class="articles-grid">
+			<article class="article-card">
+				<img src="public/images/sciences.jpg" alt="Sport Article 1">
+				<h3>Wimbledon 2024: Surprises and Upsets</h3>
+				<p>The Wimbledon 2024 tournament has been full of unexpected turns, with several top seeds facing early
+					exits.</p>
+				<a href="#" class="read-more">Read More</a>
+			</article>
+			<article class="article-card">
+				<img src="public/images/tech.jpg" alt="Sport Article 2">
+				<h3>Olympic Committee Announces New Sports for 2028</h3>
+				<p>The International Olympic Committee has revealed the addition of three new sports for the 2028 Summer
+					Olympics.</p>
+				<a href="#" class="read-more">Read More</a>
+			</article>
+		</section>
 	</main>
 
 	<footer class="footer">
@@ -127,7 +139,7 @@
 		</div>
 	</footer>
 
-	<script src="script.js"></script>
+	<script src="src/script/main.js"></script>
 </body>
 
 </html>
